@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "182801399492",
+    "firebase_url": "https://adgvit-cb43c.firebaseio.com",
+    "project_id": "adgvit-cb43c",
+    "storage_bucket": "adgvit-cb43c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182801399492:android:55ebe97d8511c92a",
+        "android_client_info": {
+          "package_name": "com.example.mayur.adgapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182801399492-kohqvm7s8aerh0fsie6vv9ine1oopt8h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk_vNJzJcyL-SHlbeN2YBsA9u0u3WVeAs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ADG App</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="loren_ipsum">Loren Ipsum data times thirty five is a lot of data. The very beginning of this loren ipsum data is to make users feel free wihle selecting random text.The past of loren ipsum goes back to the mayan age where calenders were the randomness of the day.</string>
+    <string name="about_us_content">Apple launched the Apple Developer University Program,as a free initiative to assist higher education institutions,who intend to teach development for the iPhone,iPad and iPod Touch.</string>
+
+    <string name="about_us_content2">This program,available to accredited institutions in the U.S and abroad,allows teachers to create developer teams of up to 200 students who can develop,test,debug and distribute applications via the App Store giving them complete access to developer tools,including iPhone SDK and iPhone Dev Centre resources.</string>
+    <string-array name="list_beta" color="white">
+        <item>Wow!Random tech news</item>
+        <item>Google buys it back!</item>
+        <item>Microsoft buys Nexus!</item>
+        <item>Google buys Apple</item>
+        <item>Steve Jobs plays football</item>
+        <item>Jobs buys Chelsea</item>
+        <item>Chelsea wins the premier league</item>
+        <item>Jobs NOT Dead</item>
+        <item>Larry Page secret project</item>
+        <item>Resurrection!!</item>
+        <item>India wins 71 golds in Rio</item>
+        <item>Yahoo! goes BANKRUPT!!</item>
+        <item>RAM! the new tech super power in the park!!</item>
+    </string-array>
+</resources>
