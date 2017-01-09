@@ -9,24 +9,23 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
-public class IOSFusion extends AppCompatActivity {
+public class MacAnApp extends AppCompatActivity {
 
-    TextView title, message;
-
+    TextView title,message ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_iosfusion);
+        setContentView(R.layout.activity_mac_an_app);
 
-        title = (TextView) findViewById(R.id.IOSFusion);
-        message = (TextView) findViewById(R.id.about_iosfusion);
+        title = (TextView) findViewById(R.id.MacAnApp);
+        message = (TextView) findViewById(R.id.about_macanapp);
 
         Firebase.setAndroidContext(this);
 
         final Firebase ref = new Firebase("https://adgvit-cb43c.firebaseio.com/");
 
-        ref.child("Events/iOS Fusion").addValueEventListener(new ValueEventListener() {
+        ref.child("Events/Mac-an-App").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 System.out.println(snapshot.getValue());
@@ -36,6 +35,7 @@ public class IOSFusion extends AppCompatActivity {
                 title.setText(title1);
                 message.setText(msg1);
 
+
             }
             @Override
             public void onCancelled(FirebaseError firebaseError) {
@@ -44,5 +44,4 @@ public class IOSFusion extends AppCompatActivity {
         });
 
     }
-
 }

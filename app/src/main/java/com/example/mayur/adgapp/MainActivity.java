@@ -10,7 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
 public class MainActivity extends AppCompatActivity {
+
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
+    private int[] resid={R.drawable.homeicon,R.drawable.eventsicon,R.drawable.aboutusicon};
 
     /**
      * The {@link ViewPager} that will host the section contents.
@@ -43,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
+        setupTabIcons(tabLayout);
+
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +56,12 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });*/
+    }
 
+    private void setupTabIcons(TabLayout tabLayout) {
+        tabLayout.getTabAt(0).setIcon(resid[0]);
+        tabLayout.getTabAt(1).setIcon(resid[1]);
+        tabLayout.getTabAt(2).setIcon(resid[2]);
     }
 
 
@@ -109,7 +119,9 @@ public class MainActivity extends AppCompatActivity {
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
+
     class SectionsPagerAdapter extends FragmentPagerAdapter {
+
 
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -138,13 +150,14 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public CharSequence getPageTitle(int position) {
+
             switch (position) {
                 case 0:
-                    return "Home";
+                    return "";
                 case 1:
-                    return "Events";
+                    return "";
                 case 2:
-                    return "About Us";
+                    return "";
             }
             return null;
         }

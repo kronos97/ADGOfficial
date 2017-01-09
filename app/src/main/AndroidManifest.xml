@@ -21,10 +21,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".Events" />
-        <activity android:name=".News" />
         <activity android:name=".AboutUs" />
         <activity android:name=".Home" />
-        <activity android:name=".IOSFusion"></activity>
+        <activity android:name=".IOSFusion" />
+        <activity android:name=".AppAThon" />
+        <activity android:name=".UniDev" />
+        <activity android:name=".MacAnApp"></activity>
     </application>
 
 </manifest>

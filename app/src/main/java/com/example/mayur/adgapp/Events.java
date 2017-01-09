@@ -106,6 +106,30 @@ public class Events extends Fragment {
             }
         });
 
+        event_middle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(getActivity(),AppAThon.class);
+                getActivity().startActivity(intent1);
+            }
+        });
+
+        event_bottomleft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(getActivity(),MacAnApp.class);
+                getActivity().startActivity(intent2);
+            }
+        });
+
+        event_bottomright.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3 = new Intent(getActivity(),UniDev.class);
+                getActivity().startActivity(intent3);
+            }
+        });
+
 
     }
 
